@@ -1,0 +1,10 @@
+{
+  "flights": [
+    { "id": 1, "from": "Москва", "to": "Сочи", "price": 5000, "isDirect": true },
+    { "id": 2, "from": "Москва", "to": "Сочи", "price": 3500, "isDirect": false },
+    { "id": 3, "from": "Москва", "to": "Стамбул", "price": 12000, "isDirect": true },
+    { "id": 4, "from": "Москва", "to": "Стамбул", "price": 9500, "isDirect": false },
+    { "id": 5, "from": "Москва", "to": "Дубай", "price": 25000, "isDirect": true },
+    { "id": 6, "from": "Москва", "to": "Пхукет", "price": 45000, "isDirect": false }
+  ]
+}
