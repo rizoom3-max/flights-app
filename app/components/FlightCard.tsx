@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import AddToCartButton from './AddToCartButton';
 import type { Flight } from '../types/flight';
 
 function formatPrice(price: number) {
@@ -37,12 +37,7 @@ export default function FlightCard({ flight }: { flight: Flight }) {
           <div className="text-xl font-bold text-blue-600">
             {formatPrice(flight.price)}
           </div>
-          <Link
-            href={`/flights/${flight.id}`}
-            className="rounded bg-blue-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
-          >
-            Выбрать
-          </Link>
+          <AddToCartButton flight={flight} />
         </div>
       </div>
     </div>
