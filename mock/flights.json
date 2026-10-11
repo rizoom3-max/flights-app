@@ -1,10 +1,10 @@
 {
   "flights": [
-    { "id": 1, "from": "Москва", "to": "Сочи", "price": 5000, "isDirect": true },
-    { "id": 2, "from": "Москва", "to": "Сочи", "price": 3500, "isDirect": false },
-    { "id": 3, "from": "Москва", "to": "Стамбул", "price": 12000, "isDirect": true },
-    { "id": 4, "from": "Москва", "to": "Стамбул", "price": 9500, "isDirect": false },
-    { "id": 5, "from": "Москва", "to": "Дубай", "price": 25000, "isDirect": true },
-    { "id": 6, "from": "Москва", "to": "Пхукет", "price": 45000, "isDirect": false }
+    { "id": 1, "from": "Москва", "to": "Сочи", "price": 5000, "isDirect": true, "bookings": 320, "airline": "Аэрофлот", "departure": "08:00", "arrival": "10:30" },
+    { "id": 2, "from": "Москва", "to": "Сочи", "price": 3500, "isDirect": false, "bookings": 540, "airline": "S7", "departure": "12:15", "arrival": "16:45" },
+    { "id": 3, "from": "Москва", "to": "Стамбул", "price": 12000, "isDirect": true, "bookings": 210, "airline": "Turkish Airlines", "departure": "09:30", "arrival": "13:20" },
+    { "id": 4, "from": "Москва", "to": "Стамбул", "price": 9500, "isDirect": false, "bookings": 480, "airline": "Победа", "departure": "18:40", "arrival": "01:10" },
+    { "id": 5, "from": "Москва", "to": "Дубай", "price": 25000, "isDirect": true, "bookings": 150, "airline": "Emirates", "departure": "23:50", "arrival": "06:20" },
+    { "id": 6, "from": "Москва", "to": "Пхукет", "price": 45000, "isDirect": false, "bookings": 90, "airline": "Аэрофлот", "departure": "20:00", "arrival": "11:30" }
   ]
 }

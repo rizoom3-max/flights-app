@@ -27,7 +27,8 @@ export default async function FlightPage({
       <div className="mt-4 rounded-lg  bg-white p-6 shadow" >
         <div className="flex items-center justify-between">
           <div>
-            <div className="text-2xl font-bold text-black">
+            <div className="text-sm text-gray-500">{flight.airline}</div>
+            <div className="text-2xl font-bold">
               {flight.from} → {flight.to}
             </div>
             <div className="text-sm text-gray-500">Рейс #{flight.id}</div>

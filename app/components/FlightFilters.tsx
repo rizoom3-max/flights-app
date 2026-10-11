@@ -25,8 +25,7 @@ export default function FlightFilters({ flights }: { flights: Flight[] }) {
     .sort((a, b) => {
       if (sort === 'cheap') return a.price - b.price;
       if (sort === 'expensive') return b.price - a.price;
-      // popular — пока просто по id (позже добавим поле popularity)
-      return a.id - b.id;
+      return b.bookings - a.bookings; // popular — по убыванию бронирований
     });
 
   return (

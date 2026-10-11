@@ -4,4 +4,8 @@ export type Flight = {
   to: string;
   price: number;
   isDirect: boolean;
+  bookings: number;
+  airline: string;
+  departure: string;
+  arrival: string;
 };
