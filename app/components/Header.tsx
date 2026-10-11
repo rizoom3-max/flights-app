@@ -9,15 +9,7 @@ export default function Header() {
         </Link>
 
         <nav className="flex gap-6 text-sm">
-          <Link href="/" className="hover:text-black font-bold text-white">
-            Главная
-          </Link>
-          <Link href="/search" className="hover:text-black font-bold text-white">
-            Поиск
-          </Link>
-          <Link href="/flights/SU123" className="hover:text-black font-bold text-white">
-            Пример рейса
-          </Link>
+          тут будет корзина позже
         </nav>
       </div>
     </header>
