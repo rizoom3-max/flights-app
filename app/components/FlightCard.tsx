@@ -27,7 +27,7 @@ export default function FlightCard({ flight }: { flight: Flight }) {
             
         {/* Колонка 2: маршрут откуда и куда */}
         <div className="text-center">
-          <Link href={`/flights/${flight.id}`}>
+          <Link href={`/flights/${flight.id}`} className="hover:underline">
           <div className="text-lg font-semibold">
             {flight.from} → {flight.to}
           </div>
