@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AddToCartButton from '../../components/AddToCartButton';
 import { getFlightById } from '../../lib/api';
-
+  
 function formatPrice(price: number) {
   return new Intl.NumberFormat('ru-RU').format(price) + ' ₽';
 }
@@ -13,6 +14,7 @@ export default async function FlightPage({
 }) {
   const { id } = await params;
   const flight = await getFlightById(Number(id));
+  
 
   if (!flight) {
     notFound();
@@ -38,7 +40,7 @@ export default async function FlightPage({
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 flex items-center justify-between">
           {flight.isDirect ? (
             <span className="rounded bg-green-100 px-3 py-1 text-sm text-green-700">
               Прямой рейс
@@ -48,11 +50,11 @@ export default async function FlightPage({
               С пересадкой
             </span>
           )}
+          <div className="">
+           <AddToCartButton flight={flight} />
+         </div>          
         </div>
-
-        <button className="mt-8 w-full rounded bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700">
-          Забронировать
-        </button>
+        
       </div>
     </div>
   );

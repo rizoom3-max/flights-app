@@ -1,5 +1,6 @@
 import AddToCartButton from './AddToCartButton';
 import type { Flight } from '../types/flight';
+import Link from 'next/link';
 
 function formatPrice(price: number) {
   return new Intl.NumberFormat('ru-RU').format(price) + ' ₽';
@@ -26,9 +27,11 @@ export default function FlightCard({ flight }: { flight: Flight }) {
             
         {/* Колонка 2: маршрут откуда и куда */}
         <div className="text-center">
+          <Link href={`/flights/${flight.id}`}>
           <div className="text-lg font-semibold">
             {flight.from} → {flight.to}
           </div>
+          </Link>
           <div className="text-xs text-gray-500">прилёт в {flight.arrival}</div>
         </div>
             
