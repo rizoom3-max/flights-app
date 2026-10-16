@@ -8,7 +8,7 @@ function formatPrice(price: number) {
 
 export default function FlightCard({ flight }: { flight: Flight }) {
   return (
-    <div className="rounded-lg border bg-white p-4 transition hover:shadow-md">
+    <div className="rounded-lg border border-gray-400 bg-white p-4 transition hover:shadow-md">
       <div className="grid grid-cols-3 items-center gap-4">
         {/* Колонка 1: авиакомпания и время вылета */}
         <div>

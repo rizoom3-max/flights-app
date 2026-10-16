@@ -30,13 +30,13 @@ export default function FlightFilters({ flights }: { flights: Flight[] }) {
 
   return (
     <div>
-      <div className="flex flex-col gap-3 rounded-lg border bg-white p-4">
+      <div className="flex flex-col gap-3 rounded-lg border border-gray-400 bg-white p-4">
         <input
           type="text"
           placeholder="Поиск по городу прибытия..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="rounded border px-3 py-2"
+          className="rounded border border-gray-300 px-3 py-2"
         />
 
         <div className="flex flex-wrap gap-4">
@@ -76,7 +76,7 @@ export default function FlightFilters({ flights }: { flights: Flight[] }) {
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortOption)}
-            className="rounded border px-3 py-1 text-sm"
+            className="rounded border border-gray-500 px-3 py-1 text-sm"
           >
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>

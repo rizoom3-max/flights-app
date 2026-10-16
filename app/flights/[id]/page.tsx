@@ -27,7 +27,7 @@ export default async function FlightPage({
         ← Назад к списку
       </Link>
 
-      <div className="mt-4 rounded-lg  bg-white p-6 shadow" >
+      <div className="mt-4 rounded-lg  bg-white p-6 shadow border-gray-300 border" >
         <div className="flex items-center justify-between">
           <div>
             <div className="text-sm text-gray-500">{flight.airline}</div>
